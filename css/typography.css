@@ -1,0 +1,29 @@
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+
+#heading {
+    font-family: abril fatface;
+}
+#post-body{
+	font-family: raleway;
+	font-size: 150%;
+}
+
+#user-name {
+    font-family: raleway;
+}
+
+#logout-button, #login-button {
+    font-family: raleway;
+}
+
+#submit-post {
+	font-family: raleway;
+	font-size: 100%;
+}
+
+.post-text {
+	font-family: abril fatface;
+	font-size: 100%;
+}

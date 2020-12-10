@@ -1,0 +1,112 @@
+body {
+    background: gray;
+    height: 100%;
+}
+
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+#heading {
+    background-color: #f7aa77;
+    text-align: center;
+    width: 100%;
+}
+
+#login {
+    width: 80%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+#user-name {
+    background-color: #f7aa77;
+    width: 50%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+#posts {
+    padding-bottom: 50px;
+}
+
+.post {
+    background-color: #f7aa77;
+    color: aliceblue;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+
+#write-post {
+    padding-bottom: 50px;
+}
+
+#post-body {
+    width: 100%;
+}
+
+#profile-image {
+    width: 200px;
+}
+
+   @media(min-width:768px)
+
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+#heading {
+    background-color: #f7aa77;
+    text-align: center;
+    width: 100%;
+}
+
+#login {
+    width: 80%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+#user-name {
+    background-color: #f7aa77;
+    width: 50%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+#posts {
+    padding-bottom: 50px;
+}
+
+.post {
+    background-color: #f7aa77;
+    color: aliceblue;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+
+#write-post {
+    padding-bottom: 50px;
+}
+
+#post-body {
+    width: 100%;
+}
+
+#profile-image {
+    width: 200px;
+}

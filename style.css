@@ -1,0 +1,9 @@
+@import "css/main.css";
+@import "css/typography.css";
+
+/* typographic pairing 1 - raleway and fira sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Raleway&display=swap');
+/* typographic pairing 2 - abril fatface and cormorant garamond - contrast */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@300&display=swap');
+/* typographic pairing 3 - ranchers and amatic SC - conflict */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Ranchers&display=swap');

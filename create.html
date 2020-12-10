@@ -1,0 +1,45 @@
+<!-- This is my signup.html file so the user can sign up to use our site -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up a New User Page</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <!-- We are also adding the auth.js and database.js SDK-->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyDiqr8W5aAyWsN17VxotM8Saf2ss2XQCv4",
+    authDomain: "mmp350-unit-2.firebaseapp.com",
+    databaseURL: "https://mmp350-unit-2.firebaseio.com",
+    projectId: "mmp350-unit-2",
+    storageBucket: "mmp350-unit-2.appspot.com",
+    messagingSenderId: "208695045080",
+    appId: "1:208695045080:web:e7991caa179807399a60ad"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	</script>
+</head>
+<body>
+    <div id="container">
+        <div id="heading"><h1>Sign Up a New User Page</h1></div>
+        <div id="sign-up">
+        	<input type="text" id="sign-up-username" placeholder="Username">
+        	<input type="text" id="sign-up-email" placeholder="Email">
+        	<input type="password" id="sign-up-password" placeholder="Password">
+        	<button id="sign-up-button">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Let's add the helpers and create.js file -->
+    <script src="js/helpers.js"></script>
+    <script src="js/create.js"></script>
+</body>
+</html>
