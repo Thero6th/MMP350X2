@@ -1,8 +1,9 @@
 <!-- This is my profile.html file for the user's profile page -->
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Profile Page</title>
+    <title>Profile Page</title>
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -15,51 +16,46 @@
     <!-- Add the storage SDK-->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
     <script>
-    // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDiqr8W5aAyWsN17VxotM8Saf2ss2XQCv4",
-        authDomain: "mmp350-unit-2.firebaseapp.com",
-        databaseURL: "https://mmp350-unit-2.firebaseio.com",
-        projectId: "mmp350-unit-2",
-        storageBucket: "mmp350-unit-2.appspot.com",
-        messagingSenderId: "208695045080",
-        appId: "1:208695045080:web:e7991caa179807399a60ad"
-      };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDiqr8W5aAyWsN17VxotM8Saf2ss2XQCv4",
+            authDomain: "mmp350-unit-2.firebaseapp.com",
+            databaseURL: "https://mmp350-unit-2.firebaseio.com",
+            projectId: "mmp350-unit-2",
+            storageBucket: "mmp350-unit-2.appspot.com",
+            messagingSenderId: "208695045080",
+            appId: "1:208695045080:web:e7991caa179807399a60ad"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
     </script>
 </head>
+
 <body>
     <div id="container">
-    	<div id="heading">
-			<h1>Profile Page</h1>
-			<h4>MMP 350 Fall 2020</h4>
-		</div>
-		<!-- elements to let users login -->
-		<div id="login">
-        	<input type="text" id="login-email" placeholder="Email">
-        	<input type="password" id="login-password" placeholder="Password">
-        	<button id="login-button">Login</button>
-        	<p id="login-message"></p>
-            <p><a href="create.html">Create a new account</a>.</p>
+        <div id="heading">
+            <a href="index.html"><img src='img/Untitled-1.png' alt='logo' class='fluid-image'></a>
+            <h1>Profile Page</h1>
+            <h4>MMP 350 Fall 2020</h4>
         </div>
-		<!-- elements in case user is logged in -->
+        <!-- elements in case user is logged in -->
         <div id="user-info">
-        	Hello
-        	<div id ="user-name"></div>
-        	<button id="logout-button">Log Out</button>
+            Hello
+            <div id="user-name"></div>
+            <button id="logout-button">Log Out</button>
         </div>
 
         <div id="profile">
             <img id="profile-image" src="img/default.png">
             <div>
-        	   <input id="profile-display-name" placeholder="Update my username">
+                <input id="profile-display-name" placeholder="Update my username">
             </div>
-        	<div>
+            <div>
                 <textarea id="profile-bio" placeholder="Add your bio"></textarea>
             </div>
             <div>
-        	   <button id="update-profile">Update Profile</button>
+                <button id="update-profile">Update Profile</button>
             </div>
             <div>
                 <p>Add a profile image: </p>
@@ -75,4 +71,5 @@
     <script src="js/profile.js"></script>
 
 </body>
+
 </html>

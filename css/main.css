@@ -20,9 +20,20 @@ body {
 }
 
 #login {
+    display: grid;
+    grid-template-columns: 1fr 30px fr;
     width: 80%;
     padding-top: 14px;
     padding-bottom: 14px;
+    background-color:
+}
+
+#login-button {
+    background-color: #ED5918;
+}
+
+#logout-button {
+    background-color: #ED5918;
 }
 
 #user-name {
@@ -30,6 +41,11 @@ body {
     width: 50%;
     padding-top: 14px;
     padding-bottom: 14px;
+}
+
+#user-info {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #posts {
@@ -56,9 +72,7 @@ body {
     width: 200px;
 }
 
-   @media(min-width:768px)
-
-#container {
+@media(min-width:768px) #container {
     max-width: 400px;
     margin: 0 auto;
     padding-top: 10px;

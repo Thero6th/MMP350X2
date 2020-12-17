@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Homepage</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
 
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<head>
+    <title>Homepage</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <!-- We are also adding the auth.js SDK-->
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
@@ -12,71 +13,76 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 
     <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-    apiKey: "AIzaSyDiqr8W5aAyWsN17VxotM8Saf2ss2XQCv4",
-    authDomain: "mmp350-unit-2.firebaseapp.com",
-    databaseURL: "https://mmp350-unit-2.firebaseio.com",
-    projectId: "mmp350-unit-2",
-    storageBucket: "mmp350-unit-2.appspot.com",
-    messagingSenderId: "208695045080",
-    appId: "1:208695045080:web:e7991caa179807399a60ad"
-	};
-	// Initialize Firebase
-	firebase.initializeApp(firebaseConfig);
-	</script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDiqr8W5aAyWsN17VxotM8Saf2ss2XQCv4",
+            authDomain: "mmp350-unit-2.firebaseapp.com",
+            databaseURL: "https://mmp350-unit-2.firebaseio.com",
+            projectId: "mmp350-unit-2",
+            storageBucket: "mmp350-unit-2.appspot.com",
+            messagingSenderId: "208695045080",
+            appId: "1:208695045080:web:e7991caa179807399a60ad"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
 
 </head>
+
 <body>
-	<div id="container">
+    <div id="container">
 
-		<div id="heading">
-			<h1>Cycle-medics</h1>
-			<h4>Bicycle repair forum</h4>
-		</div>
+        <div id="heading">
+            <a href="index.html"><img src='img/Untitled-1.png' alt='logo' class='fluid-image'></a>
+            <h1>Cycle-medics</h1>
+            <h4>Bicycle repair forum</h4>
+        </div>
 
-		<!-- elements to let users login -->
-		<div id="login">
-        	<input type="text" id="login-email" placeholder="Email">
-        	<input type="password" id="login-password" placeholder="Password">
-        	<button id="login-button">Login</button>
-        	<p id="login-message"></p>
+        <!-- elements to let users login -->
+        <div id="login">
+            <input type="text" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-button">Login</button>
+            <p id="login-message"></p>
             <p><a href="create.html">Create a new account</a></p>
         </div>
 
         <!-- elements in case user is logged in -->
         <div id="user-info">
-        	Hello
-        	<div id ="user-name"></div>
-        	<a id="edit-profile-link">Edit My Profile</a>
-        	<button id="logout-button">Log Out</button>
+            Hello
+            <div id="user-name"></div>
+            <a id="edit-profile-link">Edit My Profile</a>
+            <button id="logout-button">Log Out</button>
         </div>
 
-		<!-- elements to let users write a new post -->
-		<div id="write-post">
-			<div>
-				<textarea id="post-body" placeholder="What's on your mind?"></textarea></div>
-			<div>
-				<button id="submit-post">Publish</button>
-			</div>
-		</div>
+        <!-- elements to let users write a new post -->
+        <div id="write-post">
+            <div>
+                <textarea id="post-body" placeholder="What's on your mind?"></textarea></div>
+            <div>
+                <button id="submit-post">Publish</button>
+            </div>
+        </div>
 
-		<!-- elements to show the posts -->
-		<div id="posts">
-			<div class="post">
-			</div>
-		</div>
+        <!-- elements to show the posts -->
+        <div id="posts">
+            <div class="post">
+            </div>
+        </div>
 
-	</div> <!-- end of container -->
+    </div> <!-- end of container -->
 
-	<!-- Scripts -->
-	<script src="js/helpers.js"></script>
-	<script src="js/publish.js"></script>
-	<script src="js/auth.js"></script>
-	<script src="js/displayPosts.js"></script>
+    <!-- Scripts -->
+    <script src="js/helpers.js"></script>
+    <script src="js/publish.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/displayPosts.js"></script>
 
-	<script>
-		fb.loadPosts();
-	</script>
+    <script>
+        fb.loadPosts();
+
+    </script>
 </body>
+
 </html>
